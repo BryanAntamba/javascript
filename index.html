@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a JS</title>
+    <!--detectara mi lenguaje JavaScript primero-->
+</head>
+
+<body>
+    <h1>Introduccion a Java Script</h1>
+    <script>
+        //Daremos una palabra llamada hola mundo.
+        alert("Hola mundo");
+        //documente.write indica que el documento escribira Hola mundo.
+        document.write("Hola mundo");
+        //Console.log es para ingresar mensajes dentro de la "Consola".
+        console.log("Hola mundo");
+        //Variables en JS
+        //Un Arreglo es un espacio para guardar informacion y datos dependiendo la cantidad de que puede.
+        //guardar su contendio el Array.
+        //Palabra reservada "var con el nombre de la variable y el contenido".
+        var nombre = "Elvis";
+        //La variable nombre mostrara su nombre en forma de alerta con el contenido de la variable "Elvis".
+        alert(nombre);
+        //Definimos una variable de tipo numérica de tipo entero.
+        var edad = 16;
+        //nos mostrara en consola el mensaje de información y concatenamos nombre, edad para visualización de información de Elvis.
+        //En caso de que en la concatenación pongamos mal la edad y nombre nos saldra error en la consola ya que no existe una variable con
+        //tipo de dato.
+        console.log("El nombre del estudiante es: " + nombre + " Y tiene " + edad + " años");
+        //Definimos una variable de tipo string para que se visualice una aperta al usuario de ingresar su apellido
+        //Ingresa su apellido y se guarda en la variable.
+        //Cuando no se ingrese el apellido y se cancela esta opcion nos mostrara en consola de tipo NULL.
+        var apellido = prompt("Ingrese el apellido del estudiante");
+        //==============================================================================================
+        //Tipos de variables
+        //==============================================================================================
+        //Numéricas.
+        //Definimos la variable de tipo var, nombre de la variable y su contenido que es "1".
+        //No vale ingresar el simbolo ?,% en nuestro nombre de la variables ya que nos dara error.
+        //Sacar el módulo de una división sirve el %
+        var edad1 = 39;
+        //String
+        //===============================================================================================
+        var direccion = "El beaterio";
+        //Arreglo
+        //Espacio de memoria donde puedo guardar distintos espacio de datos e información.
+        //En consola nos mostrará el arreglo amigos con los nombres de los 4 amigos que tenemos en nuestro arreglo.
+        //Los Arreglos inician desde el 0 hasta donde termina (0,1,2,3,4). Cuanto almacena=4 ya que son 4 contenidos en total dentro de nuestro Arreglo.
+        var amigos = ["Luis", "Carlos", "Carina", "Norma"];
+        //===============================================================================================
+        //Booleano
+        //===============================================================================================
+        //Esta variable sera de tipo boleano que tendra de resultado verdadero.
+        var boleano = true;
+        //undefined
+        var ejemplo
+        //Null
+        //Una variable con valor y una variable de tipo Null no son iguales ya que el null indica que esta variable no tiene valor.
+        //Al contr
+        var numero2 = 10;
+        var numero2 = null;
+        //==================================================================================================
+        //nan
+        //==================================================================================================
+        //Tengo una variable de tipo String
+        var texto2 = "Hola como estas?";
+        //Estoy multiplicando una variable de tipo String con una variable de tipo entera (No existe nos dara error ya que no es posible).
+        //por que nos asomara en la consola en dato "nan" por que el tipo string y datos enteros no son iguales.
+        console.log(texto2 * 2);
+        //=================================================================================================
+        //Arreglos
+        //================================================================================================
+        //Ingresaremos a un dato del arreglo.
+        var amigos2 = ["Carlos", "Maria", "Luis"];
+        //Indica que en la consola me muestre un valor de mi arreglo.
+        console.log(amigos2[0]);
+        //================================================================================================
+        //Editar un dato del arreglo.
+        //=================================================================================================
+        //En la posicion uno me cambia carina en amigos2.
+        amigos2[1] = "Carina";
+        console.log(amigos2);
+        //Vamos a obtener el tamaño de mi arreglo.
+        //Que me muestre en consola el mensaje que me concatene amigos2 y que length me devuelve el tamaño de mi arreglo.
+        console.log("Tienes" + amigos2.length + "amigos");
+        //Vamos a anadir un elemento al final de mi arreglo.
+        //Me muestre el tamaño de amigos2 y me agregue Diego.
+        amigos2[amigos2.length] = "Diego";
+        console.log(amigos2);
+        //Añadimos varios elementos al arreglo.
+        amigos2.push("Lenin", "Alexis", "Arianna");
+        console.log(amigos);
+        //Eliminar el ultimo datp del arreglo.
+        amigos2.pop();
+        console.log(amigos2);
+        //Concatenar arreglos.
+        //definimos una variable de amigos3 donde uniremos el arreglo migos2 con el arreglo amigos.
+        var amigos3 =amigos.concat(amigos2);
+        console.log(amigos3);
+        //Operadores matematicos
+        /*suma +,
+        resta -,
+        multiplicacion *,
+        division /,
+        modulo % */
+        //Definimos dos variables para realizar la suma de dos numeros.
+        var a=5
+        var b=2;
+        //La suma de las dos variables.
+        var suma= a+b;
+        console.log("La suma de a mas b es: "+suma);
+        //Math
+        //sacaremos la raiz cuadrada de un numero especifico.
+        //Definimos una variable con valor 9.
+        var c=9;
+        //Estoy sacando la raiz cuadrada de la variable c.
+        var d= Math.sqrt(c);
+        console.log("La raiz es: "+d);
+        //Condiciones
+        //And, or, not (Conjunción, Disyuncion, Negación)
+        //Operadores logicos.
+        //&& AND
+        //|| OR
+        //Si la condicion se cumple "El valor es exacto", Si no se cumple "El valor no es exacto".
+        if (d>5){
+            console.log("El valor no es exacto");
+        }else{
+            console.log("El valor es exacto")
+        }
+    </script>
+</body>
+
+</html>
